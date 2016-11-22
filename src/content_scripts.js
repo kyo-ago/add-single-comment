@@ -6,11 +6,8 @@ window.addEventListener(`keydown`, (event) => {
 		return;
 	}
 
-	let button = document.querySelector(`[name="single_comment"]`);
+	let button = document.querySelector(`[name="single_comment"]:not([disabled])`);
 	if (!button) {
-		return;
-	}
-	if (button.disabled) {
 		return;
 	}
 	event.preventDefault();
